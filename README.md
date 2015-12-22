@@ -104,10 +104,15 @@ const UserName = (props) => (
 UserName.propTypes = { name: React.PropTypes.string.isRequired }
 
 // SMART
-const CurrentUserName = withRefluxStore(UserStore, (state) => {
+const CurrentUserName = withRefluxStore(UserStore, () => {
   const user = UserStore.getCurrentUser()
   return { name: user ? user.name : 'Guest' }
 })(UserName)
 ```
 
 Now, this is much smaller and simpler!
+
+Usage
+-----
+
+## withRefluxStore(store: RefluxStore, fetchDataFromStore: function(props): props)(BaseComponent): WrappedComponent
