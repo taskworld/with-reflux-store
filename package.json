@@ -1,0 +1,28 @@
+{
+  "name": "with-reflux-store",
+  "version": "1.0.0",
+  "description": "A higher-order-component to make it easy to subscribe to Reflux store.",
+  "main": "withRefluxStore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "babel --presets es2015-loose,react withRefluxStore.js -o index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taskworld/with-reflux-store.git"
+  },
+  "author": "Thai Pangsakulyanont @ Taskworld <thai.p@taskworld.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taskworld/with-reflux-store/issues"
+  },
+  "homepage": "https://github.com/taskworld/with-reflux-store#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015-loose": "^6.1.3",
+    "babel-preset-react": "^6.3.13"
+  },
+  "dependencies": {
+    "invariant": "^2.2.0"
+  }
+}
